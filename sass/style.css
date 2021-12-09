@@ -1,5 +1,10 @@
 .wrapper {
-  margin: 0 50px;
+  margin: 0 5px;
+}
+
+.first-title {
+  display: flex;
+  flex-direction: column;
 }
 
 .logo-oh-my-food {
@@ -18,6 +23,22 @@
   text-align: center;
 }
 
+.button-submit {
+  display: flex;
+  justify-content: center;
+}
+
+.explorer-button {
+  width: 170px;
+  height: 30px;
+  border-radius: 15px;
+}
+
+.explorer-titre {
+  display: flex;
+  flex-direction: column;
+}
+
 .boutons {
   display: flex;
   flex-direction: column;
@@ -26,6 +47,29 @@
 .boutons {
   display: flex;
   flex-direction: column;
+}
+
+.images {
+  height: 140px;
+  width: 100%;
+}
+
+.proposer-un-resto {
+  display: flex;
+  align-items: center;
+}
+
+.fa-cutlery:before, .fa-handshake-o:before, .logo-footer, .p-footer, .contact-footer {
+  color: white;
+}
+
+.partenaire {
+  display: flex;
+  align-items: center;
+}
+
+.logo-footer {
+  height: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
