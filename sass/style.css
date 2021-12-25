@@ -6,30 +6,47 @@ body {
 }
 
 h1, h4 {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: black;
 }
 
 p {
   margin: 5px 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: black;
 }
 
-.fa-heart, .fa-heart {
+.fa-heart, .fa-heart, .fa-arrow-left {
   color: black;
+}
+
+.fas.fa-check:before {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  content: "\f00c";
+  width: 20px;
+  color: #FFF;
+  height: 20px;
+  background: #FFF;
+  border: 1px solid #99E2D0;
+  border-radius: 50%;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+.fas.fa-check {
+  display: flex;
+  position: relative;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .wrapper-1 {
   padding: 15px;
   background-color: #383838;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   height: auto;
 }
 
@@ -38,69 +55,39 @@ form {
 }
 
 .first-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 .first-title--page1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
   width: 100%;
 }
 
 .logo-oh-my-food {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   height: 45px;
   font-family: Shrikhand;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   width: 33%;
 }
 
 .logo-oh-my-food-index {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   height: 45px;
   font-family: Shrikhand;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .logo-fleche {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  justify-content: flex-start;
   width: 33%;
+  margin-left: 10px;
 }
 
 .logo {
@@ -112,15 +99,9 @@ form {
 }
 
 .location {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   background-color: #dedede;
   height: 45px;
 }
@@ -135,27 +116,17 @@ form {
 }
 
 .explorer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-line-pack: justify;
-      align-content: space-between;
+  flex-direction: column;
+  align-content: space-between;
   height: 250px;
   padding: 15px;
   background-color: #f7f7f7;
 }
 
 .button-submit {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin: 15px 0;
 }
 
@@ -167,7 +138,6 @@ form {
   color: white;
   border: transparent;
 }
-
 .explorer-button--page-1 {
   width: 150px;
   height: 40px;
@@ -183,21 +153,11 @@ form {
 }
 
 .titre-page1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .titre-fonctionnement {
@@ -205,76 +165,41 @@ form {
 }
 
 .fonctionnement {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding: 15px;
 }
 
 .trois-div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin: 20px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   height: 180px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-shadow: 1px 2px 2px 1px lightgrey;
-          box-shadow: 1px 2px 2px 1px lightgrey;
+  flex-direction: row;
+  align-items: center;
+  box-shadow: 1px 2px 2px 1px lightgrey;
   border-radius: 15px;
   position: relative;
   background-color: #efefef;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   padding: 0.6rem 0;
   width: 250px;
 }
-
 .div--pink {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-shadow: 1px 2px 2px 1px lightgrey;
-          box-shadow: 1px 2px 2px 1px lightgrey;
+  flex-direction: row;
+  align-items: center;
+  box-shadow: 1px 2px 2px 1px lightgrey;
   border-radius: 15px;
   position: relative;
   background-color: #efefef;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   padding: 0.6rem 0;
   background-color: #ECE3F3;
   width: 250px;
@@ -299,50 +224,54 @@ form {
 }
 
 .position-heart {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 10px;
 }
 
-.section2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
+input:checked + .fas.fa-check:before , input:checked + .fas.fa-check .div-au-survol{
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+}
+
+.div-qui-bouge {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+}
+
+.div-au-survol {
+  display: none;
+  padding: 5px 10px;
+  align-items: center;
+  height: auto;
+  width: 30px;
+  justify-content: center;
+  background-color: #99E2D0;
+  border-radius: 0 15px 15px 0;
+}
+
+.section2 {
+  display: flex;
+  flex-direction: column;
   background-color: #efefef;
   padding: 15px 15px 45px 15px;
 }
 
 .double-lien-carte1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .double-lien-carte2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .images {
   height: 173px;
   width: 100%;
   border-radius: 15px 15px 0 0;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .lien-carte {
@@ -351,7 +280,6 @@ form {
 }
 
 .cartes-resto {
-  display: -ms-grid;
   display: grid;
   grid-gap: 15px;
 }
@@ -375,7 +303,6 @@ form {
 
 .heart1 {
   opacity: 1;
-  -webkit-transition: opacity 0.4s ease-in-out;
   transition: opacity 0.4s ease-in-out;
   position: absolute;
   right: 10px;
@@ -383,50 +310,32 @@ form {
 
 .heart2 {
   opacity: 0;
-  -webkit-transition: opacity 0.4s ease-in-out;
   transition: opacity 0.4s ease-in-out;
 }
 
 .position-heart:hover .heart1 {
   opacity: 0;
-  -webkit-transition: opacity 0.4s ease-in-out;
   transition: opacity 0.4s ease-in-out;
 }
 
 .position-heart:hover .heart2 {
   opacity: 1;
-  -webkit-transition: opacity 0.4s ease-in-out;
   transition: opacity 0.4s ease-in-out;
 }
 
 .description-carte {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-between;
   height: auto;
   background: white;
   margin-top: -4px;
   border-radius: 0 0 15px 15px;
 }
-
 .description-carte--page1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-between;
   height: auto;
   background: white;
   border-radius: 15px;
@@ -441,12 +350,8 @@ form {
 }
 
 .prix--page1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  align-items: center;
   padding: 5px 10px;
 }
 
@@ -458,7 +363,6 @@ form {
 }
 
 .entree--page1, .plat--page1, .dessert--page1 {
-  display: -ms-grid;
   display: grid;
   grid-gap: 15px;
   margin-top: 15px;
@@ -522,6 +426,11 @@ form {
   background-position: center center;
 }
 
+.logo-footer-oh-my-food {
+  display: flex;
+  align-items: center;
+}
+
 .fa-utensils, .fa-handshake-o:before, .p-footer {
   color: white;
 }
@@ -532,20 +441,15 @@ form {
 }
 
 .partenaire, .proposer-un-resto {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .logo-footer {
   height: 15px;
-  -webkit-filter: invert(100%);
-          filter: invert(100%);
+  filter: invert(100%);
   margin-bottom: 10px;
-  font-family: 'Shrikhand';
+  font-family: "Shrikhand";
 }
 
 .p-footer {
@@ -568,108 +472,100 @@ form {
   .titre-fonctionnement {
     text-align: center;
   }
+
   .section2 {
     padding: 30px;
   }
+
   .explorer {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
 }
-
 @media only screen and (min-width: 436px) {
   .wrapper-1 {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-around;
   }
+
   .section2 {
     padding: 45px;
   }
+
   .lien-carte {
     width: 300px;
   }
+
   .cartes-resto {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
+
   .titre-restaurants {
     text-align: center;
   }
+
   .marge--page1 {
     margin: 0 45px 0 45px;
   }
 }
-
 @media only screen and (min-width: 520px) {
   .marge--page1 {
     margin: 0 70px 0 70px;
   }
 }
-
 @media only screen and (min-width: 710px) {
   .first-section {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-between;
   }
+
   .fonctionnement {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     padding: 15px;
     width: 50%;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
   }
+
   .titre.fonctionnement {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     padding-top: 78px;
   }
+
   .explorer {
     height: 288px;
     width: 50%;
   }
+
   .cartes-resto {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
   }
+
   .marge--page1 {
     margin: 0 120px 0 120px;
   }
+
+  .main--page1 {
+    padding: 15px 80px 30px 80px;
+  }
 }
+
+input {
+  z-index: 99;
+  width: 0;
+  cursor: pointer;
+}
+
+input:checked + .fas.fa-check:before {
+  color: #99E2D0;
+}
+
+
+
+
 /*# sourceMappingURL=style.css.map */

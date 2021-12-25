@@ -25,8 +25,19 @@ p {
     color:black;
 }
 
-.fa-heart, .fa-heart {
+.fa-heart, .fa-heart, .fa-arrow-left {
     color: black;
+}
+.fa-check {
+    width: 20px;
+    color: #99E2D0;
+    height: 20px;
+    background: #fff;
+    border: 1px solid #99E2D0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .wrapper-1 {
@@ -78,6 +89,7 @@ form {
 display: flex;
     justify-content: flex-start;
     width: 33%;
+    margin-left: 10px;
 }
 
 
@@ -228,6 +240,17 @@ margin: 15px 0;
     padding: 10px;
 }
 
+.div-au-survol {
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    height: auto;
+    width: 30px;
+    justify-content: center;
+    background-color: $tertiaire-color;
+    border-radius: 0 15px 15px 0;
+}
+
 
 
 //...............................................main-2
@@ -335,7 +358,7 @@ margin: 15px 0;
 
 .prix--page1 {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     padding: 5px 10px;
 }
 
@@ -412,6 +435,12 @@ width: 31px;
     background-position: center center;
 }
 //...............................................footer
+
+.logo-footer-oh-my-food {
+    display: flex;
+    align-items: center;
+}
+
 
 .fa-utensils, .fa-handshake-o:before, .p-footer  {
     color: $footer-color-font;
@@ -540,8 +569,14 @@ padding-top: 78px;
 }
 
 .marge--page1 {
-margin: 0 120px 0 120px;
+    margin: 0 120px 0 120px;
 }
+
+.main--page1 {
+    padding: 15px 80px 30px 80px;
+}
+
+
 
 }
 
