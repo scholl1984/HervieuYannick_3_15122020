@@ -228,7 +228,7 @@ form {
   padding: 10px;
 }
 
-input:checked + .fas.fa-check:before , input:checked + .fas.fa-check .div-au-survol{
+#Entree1:checked + .fas.fa-check:before , #Entree1:checked + .fas.fa-check .div-au-survol, #Entree2:checked + .fas.fa-check:before , #Entree2:checked + .fas.fa-check .div-au-survol, #Entree3:checked + .fas.fa-check:before, #Entree3:checked + .fas.fa-check .div-au-survol, #Plat1:checked + .fas.fa-check:before , #Plat1:checked + .fas.fa-check .div-au-survol, #Plat2:checked + .fas.fa-check:before, #Plat2:checked + .fas.fa-check .div-au-survol, #Plat3:checked + .fas.fa-check:before , #Plat3:checked + .fas.fa-check .div-au-survol, #Dessert1:checked + .fas.fa-check:before , #Dessert1:checked + .fas.fa-check .div-au-survol, #Dessert2:checked + .fas.fa-check:before , #Dessert2:checked + .fas.fa-check .div-au-survol, #Dessert3:checked + .fas.fa-check:before , #Dessert3:checked + .fas.fa-check .div-au-survol {
   display: flex;
 }
 
@@ -397,7 +397,7 @@ input:checked + .fas.fa-check:before , input:checked + .fas.fa-check .div-au-sur
 .image-background-A-la-francaise {
   background-image: url(../images/restaurants/A-la-francaise.jpg);
   background-size: cover;
-  height: 210px;
+  height: 300px;
   width: 100%;
   background-position: center center;
 }
@@ -405,7 +405,7 @@ input:checked + .fas.fa-check:before , input:checked + .fas.fa-check .div-au-sur
 .image-background-la-palette {
   background-image: url(../images/restaurants/La-plalette.jpg);
   background-size: cover;
-  height: 210px;
+  height: 300px;
   width: 100%;
   background-position: center center;
 }
@@ -413,7 +413,7 @@ input:checked + .fas.fa-check:before , input:checked + .fas.fa-check .div-au-sur
 .image-background-Le-delice {
   background-image: url(../images/restaurants/Le-délice.jpg);
   background-size: cover;
-  height: 210px;
+  height: 300px;
   width: 100%;
   background-position: center center;
 }
@@ -421,7 +421,7 @@ input:checked + .fas.fa-check:before , input:checked + .fas.fa-check .div-au-sur
 .image-background-la-note-enchantee {
   background-image: url(../images/restaurants/La-note.jpg);
   background-size: cover;
-  height: 210px;
+  height: 300px;
   width: 100%;
   background-position: center center;
 }
@@ -555,13 +555,13 @@ input:checked + .fas.fa-check:before , input:checked + .fas.fa-check .div-au-sur
   }
 }
 
-input {
+#Entree1, #Entree2, #Entree3, #Plat1, #Plat2, #Plat3, #Dessert1, #Dessert2, #Dessert3 {
   z-index: 99;
   width: 0;
   cursor: pointer;
 }
 
-input:checked + .fas.fa-check:before {
+#Entree1:checked + .fas.fa-check:before, #Entree2:checked + .fas.fa-check:before, #Entree3:checked + .fas.fa-check:before, #Plat1:checked + .fas.fa-check:before, #Plat2:checked + .fas.fa-check:before, #Plat3:checked + .fas.fa-check:before, #Dessert1:checked + .fas.fa-check:before, #Dessert2:checked + .fas.fa-check:before, #Dessert3:checked + .fas.fa-check:before {
   color: #99E2D0;
 }
 
