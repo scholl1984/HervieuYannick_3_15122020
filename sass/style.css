@@ -426,13 +426,21 @@ form {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: auto;
+  height: 55px;
   background: white;
   border-radius: 15px;
 }
 
 .titre-carte, .localisation-resto, .titre-carte--page1, .descriptif-plat--page1, .p-prix--page1 {
-  margin: 5px;
+    margin: 5px;
+}
+
+.carte-resto--page1:hover .descriptif-plat--page1, 
+.carte-resto--page1:hover .titre-carte--page1 {
+  max-width: 140px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .La-Palette, .La-note, .A-la-francaise, .Le-délice, .carte-resto--page1 {
