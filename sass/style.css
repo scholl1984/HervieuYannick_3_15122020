@@ -1,0 +1,610 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+body {
+  margin: 0;
+}
+
+h1, h4 {
+  font-family: "Roboto", sans-serif;
+  color: black;
+}
+
+p {
+  margin: 5px 0;
+  font-family: "Roboto", sans-serif;
+  color: black;
+}
+
+.loader {
+  visibility: hidden;
+  position: absolute;
+  right: 0;
+  left:0;
+  top: 30%;
+  margin: auto;
+  border: 20px solid #EAF0F6;
+  border-radius: 50%;
+  border-top: 20px solid #FF7A59;
+  border-left: 20px solid blue;
+  border-right: 20px solid blueviolet;
+  border-bottom: 20px solid yellow;
+  width: 200px;
+  height: 200px;
+  animation: spinner 3s linear;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg);
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+.plat--page1 {
+  animation: appear 1s linear;
+}
+
+.wrapper, .dessert--page1 {
+  animation: appear 3s linear;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fa-heart, .fa-heart, .fa-arrow-left {
+  color: black;
+}
+
+.fa-check-circle {
+  color: white;
+}
+
+.wrapper-1 {
+  padding: 15px;
+  background-color: #383838;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+form {
+  margin-left: 50px;
+}
+
+.first-title {
+  display: flex;
+  flex-direction: column;
+}
+.first-title--page1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.logo-oh-my-food {
+  display: flex;
+  justify-content: center;
+  height: 45px;
+  font-family: Shrikhand;
+  align-items: center;
+  width: 33%;
+}
+
+.logo-oh-my-food-index {
+  display: flex;
+  justify-content: center;
+  height: 45px;
+  font-family: Shrikhand;
+  align-items: center;
+}
+
+.logo-fleche {
+  display: flex;
+  justify-content: flex-start;
+  width: 33%;
+  margin-left: 10px;
+}
+
+.logo {
+  height: 20px;
+}
+
+#search {
+  border: none;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #dedede;
+  height: 45px;
+}
+
+#search {
+  background-color: #dedede;
+}
+
+.explorer-titre {
+  text-align: center;
+  padding: 0 20px;
+}
+
+.explorer {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  height: 250px;
+  padding: 15px;
+  background-color: #f7f7f7;
+}
+
+.button-submit {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+}
+
+.explorer-button {
+  width: 220px;
+  height: 45px;
+  border-radius: 25px;
+  background: linear-gradient(346deg, #8406e0 8%, #ff07f3 87%);
+  color: white;
+  border: transparent;
+}
+.explorer-button--page-1 {
+  width: 150px;
+  height: 40px;
+  border-radius: 25px;
+  background: linear-gradient(346deg, #8406e0 8%, #ff07f3 87%);
+  color: white;
+  border: transparent;
+  cursor: pointer;
+}
+
+.explorer-button:hover {
+  filter: brightness(200%) drop-shadow(30px 3px 4px black);
+}
+
+.explorer-button--page-1:hover {
+  filter: brightness(200%) drop-shadow(30px 3px 4px black);
+}
+
+.fa-store {
+  color: #A333FF;
+}
+
+.titre-page1 {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.titre-fonctionnement {
+  text-align: start;
+}
+
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.trois-div {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  justify-content: space-between;
+  height: 180px;
+  align-items: center;
+}
+
+.div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-shadow: 1px 2px 2px 1px lightgrey;
+  border-radius: 15px;
+  position: relative;
+  background-color: #efefef;
+  justify-content: center;
+  padding: 0.6rem 0;
+  width: 250px;
+}
+.div--pink {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-shadow: 1px 2px 2px 1px lightgrey;
+  border-radius: 15px;
+  position: relative;
+  background-color: #efefef;
+  justify-content: center;
+  padding: 0.6rem 0;
+  background-color: #ECE3F3;
+  width: 250px;
+}
+
+.logo-fonctionnement {
+  margin-right: 20px;
+}
+
+.number {
+  position: absolute;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  padding: 2px;
+  background: #fff;
+  border: 2px solid transparent;
+  color: white;
+  background-color: #9356DC;
+  text-align: center;
+  left: -15px;
+}
+
+.position-heart {
+  display: flex;
+  padding: 10px;
+}
+
+.div-au-survol {
+  display: none;
+  width: 0px;
+  position: relative;
+  right: -30px;
+}
+
+.description-carte--page1:hover .div-au-survol {
+  display: block;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  height: auto;
+  width: 30px;
+  justify-content: center;
+  background-color: #99E2D0;
+  border-radius: 0 15px 15px 0;
+  transform: display 5s linear;
+}
+
+.section2 {
+  display: flex;
+  flex-direction: column;
+  background-color: #efefef;
+  padding: 15px 15px 45px 15px;
+}
+
+.double-lien-carte1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.double-lien-carte2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.images {
+  height: 173px;
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+  object-fit: cover;
+}
+
+.lien-carte {
+  text-decoration: none;
+  position: relative;
+}
+
+.cartes-resto {
+  display: grid;
+  grid-gap: 15px;
+}
+
+.block-nouveau {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #98F4C7;
+}
+
+.p-nouveau {
+  color: #17862B;
+  width: 75px;
+  text-align: center;
+}
+
+.position-heart {
+  position: relative;
+}
+
+.heart1 {
+  opacity: 1;
+  transition: opacity 0.4s ease-in-out;
+  position: absolute;
+  right: 10px;
+}
+
+.heart2 {
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.position-heart:hover .heart1 {
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.position-heart:hover .heart2 {
+  opacity: 1;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.description-carte {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: auto;
+  background: white;
+  margin-top: -4px;
+  border-radius: 0 0 15px 15px;
+}
+.description-carte--page1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: auto;
+  background: white;
+  border-radius: 15px;
+}
+
+.titre-carte, .localisation-resto, .titre-carte--page1, .descriptif-plat--page1, .p-prix--page1 {
+  margin: 5px;
+}
+
+.La-Palette, .La-note, .A-la-francaise, .Le-délice, .carte-resto--page1 {
+  padding: 5px 10px;
+}
+
+.carte-resto--page1 {
+  width: 90%;
+}
+
+.prix--page1 {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+.main--page1 {
+  background-color: #f7f7f7;
+  padding: 15px 15px 30px 15px;
+  border-radius: 30px 30px 0px 0px;
+  margin: -20px 0 0 0;
+}
+
+.entree--page1, .plat--page1, .dessert--page1 {
+  display: grid;
+  grid-gap: 15px;
+  margin-top: 15px;
+}
+
+.titre-carte--page1, .p-prix--page1 {
+  font-size: 14px;
+}
+
+.descriptif-plat--page1 {
+  font-size: 12px;
+}
+
+.titre-page1-A-la-francaise {
+  font-size: 15px;
+}
+
+.titre-entree--page1, .titre-plats--page1, .titre-dessert--page1 {
+  font-size: 10px;
+  border-bottom: 2px solid #A6F6CD;
+  width: 31px;
+}
+
+.underline-page1 {
+  margin: 11px 0px 6px 2px;
+}
+
+.titre-carte--page1 {
+  font-weight: bold;
+}
+
+.image-background-A-la-francaise {
+  background-image: url(../images/restaurants/A-la-francaise.jpg);
+  background-size: cover;
+  height: 210px;
+  width: 100%;
+  background-position: center center;
+}
+
+.image-background-la-palette {
+  background-image: url(../images/restaurants/La-plalette.jpg);
+  background-size: cover;
+  height: 210px;
+  width: 100%;
+  background-position: center center;
+}
+
+.image-background-Le-delice {
+  background-image: url(../images/restaurants/Le-délice.jpg);
+  background-size: cover;
+  height: 210px;
+  width: 100%;
+  background-position: center center;
+}
+
+.image-background-la-note-enchantee {
+  background-image: url(../images/restaurants/La-note.jpg);
+  background-size: cover;
+  height: 210px;
+  width: 100%;
+  background-position: center center;
+}
+
+.logo-footer-oh-my-food {
+  display: flex;
+  align-items: center;
+}
+
+.fa-utensils, .fa-handshake-o:before, .p-footer {
+  color: white;
+}
+
+.contact-footer {
+  font-family: Roboto;
+  color: white;
+}
+
+.partenaire, .proposer-un-resto {
+  display: flex;
+  align-items: center;
+}
+
+.logo-footer {
+  height: 15px;
+  filter: invert(100%);
+  margin-bottom: 10px;
+  font-family: "Shrikhand";
+}
+
+.p-footer {
+  padding-left: 10px;
+}
+
+.contact-footer {
+  text-decoration: none;
+}
+
+.p2-footer {
+  color: white;
+}
+
+.p-footer-1 {
+  color: white;
+}
+
+@media only screen and (min-width: 333px) {
+  .titre-fonctionnement {
+    text-align: center;
+  }
+
+  .section2 {
+    padding: 30px;
+  }
+
+  .explorer {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 436px) {
+  .wrapper-1 {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .section2 {
+    padding: 45px;
+  }
+
+  .lien-carte {
+    width: 300px;
+  }
+
+  .cartes-resto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .titre-restaurants {
+    text-align: center;
+  }
+
+  .marge--page1 {
+    margin: 0 45px 0 45px;
+  }
+}
+@media only screen and (min-width: 520px) {
+  .marge--page1 {
+    margin: 0 70px 0 70px;
+  }
+}
+@media only screen and (min-width: 710px) {
+  .first-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .fonctionnement {
+    display: flex;
+    padding: 15px;
+    width: 50%;
+    justify-content: space-around;
+  }
+
+  .titre.fonctionnement {
+    display: flex;
+    padding-top: 78px;
+  }
+
+  .explorer {
+    height: 288px;
+    width: 50%;
+  }
+
+  .cartes-resto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .marge--page1 {
+    margin: 0 120px 0 120px;
+  }
+
+  .main--page1 {
+    padding: 15px 80px 30px 80px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
