@@ -8,6 +8,7 @@ $tertiaire-color: #99E2D0;
 $grey-color:#efefef;
 $footer-color-font:white;
 $back-ground-color-footer: 	rgb(56,56,56);
+$background-color-bouton:linear-gradient(346deg, rgba(132,6,224,1) 8%, rgba(255,7,243,1) 87%);
 
 
 body {
@@ -25,22 +26,37 @@ p {
     color:black;
 }
 
+.loader {
+    margin: auto;
+    border: 20px solid #EAF0F6;
+    border-radius: 50%;
+    border-top: 20px solid #FF7A59;
+    width: 200px;
+    height: 200px;
+    animation: spinner 0s linear 3s;
+  }
+  
+  @keyframes spinner {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
 .fa-heart, .fa-heart, .fa-arrow-left {
     color: black;
 }
-.fa-check {
-    width: 20px;
-    color: #99E2D0;
-    height: 20px;
-    background: #fff;
-    border: 1px solid #99E2D0;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.fa-check-circle {
+    color:white;
 }
 
 .wrapper-1 {
+    padding: 15px;
+    background-color: $back-ground-color-footer;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.wrapper-1--page1 {
     padding: 15px;
     background-color: $back-ground-color-footer;
     display: flex;
@@ -64,7 +80,6 @@ form {
         width: 100%;
     }
 }
-
 
 .logo-oh-my-food {
     display: flex;
@@ -140,7 +155,7 @@ margin: 15px 0;
     width: 220px;
     height: 45px;
     border-radius: 25px;
-    background: linear-gradient(346deg, rgba(132,6,224,1) 8%, rgba(255,7,243,1) 87%);
+    background: $background-color-bouton;
     color: white;
     border: transparent;
 
@@ -148,17 +163,24 @@ margin: 15px 0;
      width: 150px;
     height: 40px;
     border-radius: 25px;
-    background: linear-gradient(346deg, rgba(132,6,224,1) 8%, rgba(255,7,243,1) 87%);
+    background: $background-color-bouton;
     color: white;
     border: transparent;
     cursor:pointer;
     }
         }
 
+.explorer-button:hover {
+    filter: brightness(200%) drop-shadow(30px 3px 4px black);
+} 
+
+.explorer-button--page-1:hover {
+    filter: brightness(200%) drop-shadow(30px 3px 4px black);
+}
+        
 .fa-store {
     color: #A333FF;
 }
-
 
 //...............................................main-1
 
@@ -241,6 +263,14 @@ margin: 15px 0;
 }
 
 .div-au-survol {
+   display: none;
+   width: 0px;
+   position: relative;
+   right: -30px;
+}
+
+.description-carte--page1:hover .div-au-survol {
+    display: block;
     padding: 5px 10px;
     display: flex;
     align-items: center;
@@ -249,6 +279,7 @@ margin: 15px 0;
     justify-content: center;
     background-color: $tertiaire-color;
     border-radius: 0 15px 15px 0;
+    transform: display 5s linear;
 }
 
 
@@ -354,6 +385,11 @@ margin: 15px 0;
 
 .La-Palette, .La-note, .A-la-francaise, .Le-délice, .carte-resto--page1 {
     padding: 5px 10px;
+
+}
+
+.carte-resto--page1 {
+    width: 90%;
 }
 
 .prix--page1 {

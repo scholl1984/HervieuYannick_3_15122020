@@ -16,30 +16,72 @@ p {
   color: black;
 }
 
+.loader {
+  visibility: hidden;
+  position: absolute;
+  right: 0;
+  left:0;
+  top: 30%;
+  margin: auto;
+  border: 20px solid #EAF0F6;
+  border-radius: 50%;
+  border-top: 20px solid #FF7A59;
+  border-left: 20px solid blue;
+  border-right: 20px solid blueviolet;
+  border-bottom: 20px solid yellow;
+  width: 200px;
+  height: 200px;
+  animation: spinner 3s linear;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg);
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+.plat--page1 {
+  animation: appear 1s linear;
+}
+
+.wrapper, .dessert--page1 {
+  animation: appear 3s linear;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .fa-heart, .fa-heart, .fa-arrow-left {
   color: black;
 }
 
-.fas.fa-check:before {
-  display: none;
-  justify-content: center;
-  align-items: center;
-  content: "\f00c";
-  width: 20px;
-  color: #FFF;
-  height: 20px;
-  background: #FFF;
-  border: 1px solid #99E2D0;
-  border-radius: 50%;
-  position: absolute;
-  right: 15px;
-  top: 15px;
-}
-.fas.fa-check {
-  display: flex;
-  position: relative;
-  width: 100%;
-  justify-content: space-between;
+.fa-check-circle {
+  color: white;
 }
 
 .wrapper-1 {
@@ -148,6 +190,14 @@ form {
   cursor: pointer;
 }
 
+.explorer-button:hover {
+  filter: brightness(200%) drop-shadow(30px 3px 4px black);
+}
+
+.explorer-button--page-1:hover {
+  filter: brightness(200%) drop-shadow(30px 3px 4px black);
+}
+
 .fa-store {
   color: #A333FF;
 }
@@ -228,26 +278,24 @@ form {
   padding: 10px;
 }
 
-#Entree1:checked + .fas.fa-check:before , #Entree1:checked + .fas.fa-check .div-au-survol, #Entree2:checked + .fas.fa-check:before , #Entree2:checked + .fas.fa-check .div-au-survol, #Entree3:checked + .fas.fa-check:before, #Entree3:checked + .fas.fa-check .div-au-survol, #Plat1:checked + .fas.fa-check:before , #Plat1:checked + .fas.fa-check .div-au-survol, #Plat2:checked + .fas.fa-check:before, #Plat2:checked + .fas.fa-check .div-au-survol, #Plat3:checked + .fas.fa-check:before , #Plat3:checked + .fas.fa-check .div-au-survol, #Dessert1:checked + .fas.fa-check:before , #Dessert1:checked + .fas.fa-check .div-au-survol, #Dessert2:checked + .fas.fa-check:before , #Dessert2:checked + .fas.fa-check .div-au-survol, #Dessert3:checked + .fas.fa-check:before , #Dessert3:checked + .fas.fa-check .div-au-survol {
-  display: flex;
-}
-
-.div-qui-bouge {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-
-}
-
 .div-au-survol {
   display: none;
+  width: 0px;
+  position: relative;
+  right: -30px;
+}
+
+.description-carte--page1:hover .div-au-survol {
+  display: block;
   padding: 5px 10px;
+  display: flex;
   align-items: center;
   height: auto;
   width: 30px;
   justify-content: center;
   background-color: #99E2D0;
   border-radius: 0 15px 15px 0;
+  transform: display 5s linear;
 }
 
 .section2 {
@@ -349,6 +397,10 @@ form {
   padding: 5px 10px;
 }
 
+.carte-resto--page1 {
+  width: 90%;
+}
+
 .prix--page1 {
   display: flex;
   align-items: center;
@@ -397,7 +449,7 @@ form {
 .image-background-A-la-francaise {
   background-image: url(../images/restaurants/A-la-francaise.jpg);
   background-size: cover;
-  height: 300px;
+  height: 210px;
   width: 100%;
   background-position: center center;
 }
@@ -405,7 +457,7 @@ form {
 .image-background-la-palette {
   background-image: url(../images/restaurants/La-plalette.jpg);
   background-size: cover;
-  height: 300px;
+  height: 210px;
   width: 100%;
   background-position: center center;
 }
@@ -413,7 +465,7 @@ form {
 .image-background-Le-delice {
   background-image: url(../images/restaurants/Le-délice.jpg);
   background-size: cover;
-  height: 300px;
+  height: 210px;
   width: 100%;
   background-position: center center;
 }
@@ -421,7 +473,7 @@ form {
 .image-background-la-note-enchantee {
   background-image: url(../images/restaurants/La-note.jpg);
   background-size: cover;
-  height: 300px;
+  height: 210px;
   width: 100%;
   background-position: center center;
 }
@@ -554,18 +606,5 @@ form {
     padding: 15px 80px 30px 80px;
   }
 }
-
-#Entree1, #Entree2, #Entree3, #Plat1, #Plat2, #Plat3, #Dessert1, #Dessert2, #Dessert3 {
-  z-index: 99;
-  width: 0;
-  cursor: pointer;
-}
-
-#Entree1:checked + .fas.fa-check:before, #Entree2:checked + .fas.fa-check:before, #Entree3:checked + .fas.fa-check:before, #Plat1:checked + .fas.fa-check:before, #Plat2:checked + .fas.fa-check:before, #Plat3:checked + .fas.fa-check:before, #Dessert1:checked + .fas.fa-check:before, #Dessert2:checked + .fas.fa-check:before, #Dessert3:checked + .fas.fa-check:before {
-  color: #99E2D0;
-}
-
-
-
 
 /*# sourceMappingURL=style.css.map */
