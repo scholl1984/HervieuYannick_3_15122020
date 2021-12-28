@@ -281,8 +281,8 @@ form {
 .div-au-survol {
   display: none;
   width: 0px;
-  position: relative;
-  right: -30px;
+  /* position: relative;
+  right: -30px; */
 }
 
 .description-carte--page1:hover .div-au-survol {
@@ -291,12 +291,43 @@ form {
   display: flex;
   align-items: center;
   height: auto;
-  width: 30px;
+  width: 50px;
   justify-content: center;
   background-color: #99E2D0;
   border-radius: 0 15px 15px 0;
-  transform: display 5s linear;
+  animation: width 1s ease-in;
+  /* transform: display 5s linear; */
 }
+@keyframes width {
+  0% {
+    width: 0px;
+  }
+  15% {
+    width: 8px;
+  }
+  25% {
+    width: 15px;
+  }
+  35% {
+    width: 25px;
+  }
+  50% {
+    width: 30px;
+  }
+  60% {
+    width: 35px;
+  }
+  80% {
+    width: 40px;
+  }
+  90% {
+    width: 45px;
+  }
+  100% {
+    width: 50px;
+  }
+}
+
 
 .section2 {
   display: flex;
