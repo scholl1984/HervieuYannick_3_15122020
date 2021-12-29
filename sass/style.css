@@ -225,9 +225,9 @@ form {
   display: flex;
   flex-direction: column;
   margin: 20px;
-  justify-content: space-between;
   height: 180px;
   align-items: center;
+  justify-content: space-between;
 }
 
 .div {
@@ -435,14 +435,6 @@ form {
     margin: 5px;
 }
 
-.carte-resto--page1:hover .descriptif-plat--page1, 
-.carte-resto--page1:hover .titre-carte--page1 {
-  max-width: 140px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
 .La-Palette, .La-note, .A-la-francaise, .Le-délice, .carte-resto--page1 {
   padding: 5px 10px;
 }
@@ -584,6 +576,21 @@ form {
     justify-content: center;
   }
 }
+
+  @media only screen and (max-width: 425px) {
+    .description-carte--page1:hover .carte-resto--page1 .descriptif-plat--page1, 
+    .description-carte--page1:hover .carte-resto--page1 .titre-carte--page1 {
+      max-width: 140px;
+    }
+    
+    .descriptif-plat--page1, .titre-carte--page1 {
+      max-width: 230px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+  }
+
 @media only screen and (min-width: 436px) {
   .wrapper-1 {
     flex-direction: row;
