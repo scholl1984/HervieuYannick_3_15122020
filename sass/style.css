@@ -19,6 +19,8 @@ p {
   color: black;
 }
 
+
+
 .loader {
   visibility: hidden;
   position: absolute;
@@ -153,6 +155,9 @@ form {
   height: 45px;
 }
 
+.fa-heart {
+  background: -webkit-linear-gradient(#cf11a2);
+}
 #search {
   background-color: #dedede;
 }
