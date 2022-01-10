@@ -40,7 +40,14 @@ p {
     100% { transform: rotate(360deg); }
   }
 
-.fa-heart, .fa-heart, .fa-arrow-left {
+.fa-heart {
+    background: -webkit-linear-gradient(#cf11a2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+
+.fa-arrow-left {
     color: black !important;
 }
 .fa-check-circle {
