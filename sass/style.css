@@ -4,11 +4,13 @@
 body {
   margin: 0;
 }
+
 h1 {
-  font-family: 'Shrikhand', cursive;
+  font-family: "Shrikhand", sans-serif;
+  color: black;
 }
 
-h4, h2 {
+h2, h4 {
   font-family: "Roboto", sans-serif;
   color: black;
 }
@@ -21,9 +23,9 @@ p {
 
 .loader {
   visibility: hidden;
-  position: absolute;
+  position: fixed;
   right: 0;
-  left:0;
+  left: 0;
   top: 30%;
   margin: auto;
   border: 20px solid #EAF0F6;
@@ -49,7 +51,6 @@ p {
     opacity: 0;
   }
 }
-
 .plat--page1 {
   animation: appear 1s linear;
 }
@@ -78,18 +79,33 @@ p {
     opacity: 1;
   }
 }
+.far, .fas {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff00f2), to(#5647ad));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
+.fa-utensils {
+  color: white !important;
+}
+
+.fa-check-circle {
+  color: white;
+}
 
 .fa-arrow-left {
   color: black;
 }
 
-.fa-check-circle {
-  color: white;
-  animation: rotate 1s ease-in;
+.wrapper-1 {
+  padding: 15px;
+  background-color: #383838;
+  display: flex;
+  flex-direction: column;
+  height: auto;
 }
 
-.wrapper-1 {
+.wrapper-1--page1 {
   padding: 15px;
   background-color: #383838;
   display: flex;
@@ -153,9 +169,6 @@ form {
   height: 45px;
 }
 
-.fa-heart {
-  background: -webkit-linear-gradient(#cf11a2);
-}
 #search {
   background-color: #dedede;
 }
@@ -177,7 +190,7 @@ form {
 .button-submit {
   display: flex;
   justify-content: center;
-  margin: 15px 0;
+  margin: 35px 0;
 }
 
 .explorer-button {
@@ -187,6 +200,7 @@ form {
   background: linear-gradient(346deg, #8406e0 8%, #ff07f3 87%);
   color: white;
   border: transparent;
+  box-shadow: 2px 3px 5px #383838;
 }
 .explorer-button--page-1 {
   width: 150px;
@@ -196,18 +210,19 @@ form {
   color: white;
   border: transparent;
   cursor: pointer;
+  box-shadow: 2px 3px 5px #383838;
 }
 
 .explorer-button:hover {
-  filter: brightness(200%) drop-shadow(30px 3px 4px black);
+  filter: brightness(124%);
+  box-shadow: 6px 6px 6px #383838;
+  transition-duration: 0.5s;
 }
 
 .explorer-button--page-1:hover {
-  filter: brightness(200%) drop-shadow(30px 3px 4px black);
-}
-
-.fa-store {
-  color: #A333FF;
+  filter: brightness(124%);
+  box-shadow: 6px 6px 6px #383838;
+  transition-duration: 0.5s;
 }
 
 .titre-page1 {
@@ -232,9 +247,9 @@ form {
   display: flex;
   flex-direction: column;
   margin: 20px;
+  justify-content: space-between;
   height: 180px;
   align-items: center;
-  justify-content: space-between;
 }
 
 .div {
@@ -289,8 +304,8 @@ form {
 .div-au-survol {
   display: none;
   width: 0px;
-  
 }
+
 .description-carte--page1:hover .div-au-survol {
   display: block;
   padding: 5px 10px;
@@ -304,6 +319,7 @@ form {
   animation: width 1s ease-in-out;
   /* transform: display 5s linear; */
 }
+
 @keyframes width {
   0% {
     width: 0px;
@@ -332,19 +348,30 @@ form {
   100% {
     width: 50px;
   }
-  }
-
+}
+.fa-check-circle {
+  color: white;
+  animation: rotate 1s ease-in;
+}
 
 @keyframes rotate {
   0% {
     transform: rotate(0deg);
   }
-  
   100% {
     transform: rotate(360deg);
   }
 }
+.div-globale-des-menus {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
+.div-entrées {
+  display: flex;
+  flex-direction: column;
+}
 
 .section2 {
   display: flex;
@@ -361,6 +388,11 @@ form {
 .double-lien-carte2 {
   display: flex;
   flex-direction: column;
+}
+
+.carte-par-carte {
+  position: relative;
+  width: 294px;
 }
 
 .images {
@@ -382,7 +414,7 @@ form {
 
 .block-nouveau {
   position: absolute;
-  top: 10px;
+  top: -136px;
   right: 10px;
   background-color: #98F4C7;
 }
@@ -432,14 +464,13 @@ form {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 55px;
+  height: auto;
   background: white;
   border-radius: 15px;
-
 }
 
 .titre-carte, .localisation-resto, .titre-carte--page1, .descriptif-plat--page1, .p-prix--page1 {
-    margin: 5px;
+  margin: 5px;
 }
 
 .La-Palette, .La-note, .A-la-francaise, .Le-délice, .carte-resto--page1 {
@@ -470,7 +501,7 @@ form {
 }
 
 .titre-carte--page1, .p-prix--page1 {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .descriptif-plat--page1 {
@@ -536,6 +567,14 @@ form {
   color: white;
 }
 
+.fa-list, .fa-mobile {
+  color: black;
+}
+
+.fa-store {
+  color: #9356DC;
+}
+
 .contact-footer {
   font-family: Roboto;
   color: white;
@@ -583,21 +622,19 @@ form {
     justify-content: center;
   }
 }
-
-  @media only screen and (max-width: 425px) {
-    .description-carte--page1:hover .carte-resto--page1 .descriptif-plat--page1, 
-    .description-carte--page1:hover .carte-resto--page1 .titre-carte--page1 {
-      max-width: 140px;
-    }
-    
-    .descriptif-plat--page1, .titre-carte--page1 {
-      max-width: 230px;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      overflow: hidden;
-    }
+@media only screen and (max-width: 425px) {
+  .description-carte--page1:hover .carte-resto--page1 .descriptif-plat--page1,
+.description-carte--page1:hover .carte-resto--page1 .titre-carte--page1 {
+    max-width: 140px;
   }
 
+  .descriptif-plat--page1, .titre-carte--page1 {
+    max-width: 230px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}
 @media only screen and (min-width: 436px) {
   .wrapper-1 {
     flex-direction: row;
@@ -668,6 +705,30 @@ form {
 
   .main--page1 {
     padding: 15px 80px 30px 80px;
+  }
+}
+@media only screen and (min-width: 1250px) {
+  .div-globale-des-menus {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .div-entrées {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .description-carte--page1:hover .carte-resto--page1 .descriptif-plat--page1,
+.description-carte--page1:hover .carte-resto--page1 .titre-carte--page1 {
+    max-width: 140px;
+  }
+
+  .descriptif-plat--page1, .titre-carte--page1 {
+    max-width: 230px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
   }
 }
 
