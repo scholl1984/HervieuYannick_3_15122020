@@ -90,10 +90,11 @@ p {
     }
   }
 
-.far, .fas {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 0, 242)), to(rgb(86, 71, 173)));
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent; 
+  .far, .fas {
+    background: -webkit-linear-gradient(
+  346deg, rgba(132,6,224,1) 8%, rgba(255,7,243,1) 87%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
   }
 
 .fa-utensils {
